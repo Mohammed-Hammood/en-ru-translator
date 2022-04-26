@@ -1,0 +1,29 @@
+
+.home-page-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:fixed;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    .content-container {
+        max-width:470px;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+
+        .user-icon {
+            width:150px;
+            height:150px;
+        }
+        button {
+            padding:10px;
+            text-align: center;
+            color:black;
+            width:100%;
+            flex:1 1 100%;
+        }
+    }
+}
