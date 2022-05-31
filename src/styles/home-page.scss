@@ -8,22 +8,122 @@
     width:100%;
     left:0;
     top:0;
+    font-family: "Roboto";
     .content-container {
-        max-width:470px;
+        min-width:482px;
         display:flex;
         justify-content: center;
         flex-direction:column;
+        gap:50px;
+        .first-container {
 
-        .user-icon {
-            width:150px;
-            height:150px;
+            #translate-this-sentence {
+                font-size: 36px;
+                color:#252525;
+                font-weight: 400;
+                text-shadow: -2px -4px 3px #FFFFFF, 2px 4px 3px rgba(0, 0, 0, 0.25);
+            }
         }
-        button {
-            padding:10px;
-            text-align: center;
-            color:black;
-            width:100%;
-            flex:1 1 100%;
+        .second-container {
+            display: flex;
+            flex-direction: row;
+            gap:30px;
+            .first-row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .circle {
+                    flex: 0 0 114px;
+                    width:114px;
+                    height:114px;
+                    border-radius:50%;
+                    background-color:#6C6C6C;
+                    margin-bottom:-8px;
+                }
+                .half-circle {
+                    display: inline-block;
+                    background: #6C6C6C;
+                    height: 93.5px;
+                    width:185.65px;
+                    border-radius: 55px;
+                    border-top-left-radius: 380px;
+                    border-top-right-radius: 380px;
+                }
+            }
+            .second-row {
+                width:100%;
+                .english-text {
+                    padding:17px;
+                    flex:1 1 70%;
+                    border:2px solid #252525;
+                    border-radius:18px;
+                }
+            }
+        }
+        .third-container {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            gap:45px;
+            align-items:center;
+            .vector {
+                width:100%;
+                border-top: 1px solid #4B4B4B;
+            }
+            
+        }
+       
+        .fifth-container {
+            display: flex;
+            justify-content: flex-start;
+            gap:10px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .word-container {
+                display: flex;
+                flex:1 1 14%;
+                min-width: 35px;
+                min-height:30px;
+                justify-content: center;
+                padding:0;
+                background:#E6E6E6;
+                border-radius: 13px;
+                box-shadow: inset 0px 8px 4px -6px rgba(0, 0, 0, 0.25);
+                .word {
+                    background: #FFFFFF;
+                    padding:4px 0;
+                    font-size:16px;
+                    text-align: center;
+                    width: 100%;
+                    font-family:"Roboto";
+                    border: 1px solid #C9C9C9;
+                    box-shadow: 0px 8px 4px -6px rgba(0, 0, 0, 0.25);
+                    border-radius: 13px;
+                    cursor:grab;
+                }
+                
+            }
+        }
+        .button-container {
+            margin-top:79px;
+            button:active {
+                border:1px groove silver;
+            }
+            button {
+                padding:10px;
+                text-align: center;
+                color:black;
+                border:1px groove rgba(0, 0, 0, 0);
+                font-size: 18px;
+                background: linear-gradient(91.2deg, #FFFFFF 0%, #F2F2F2 100%);
+                box-shadow: -2px -4px 8px #FFFFFF, 2px 4px 8px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                width:100%;
+                flex:1 1 100%;
+                height: 68px;
+                border-radius:88px;
+            }
         }
     }
 }
